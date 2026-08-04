@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Practice 6A - Chapter 8 Tables</title>
+
+<style>
+table {
+	width: 100%;
+	max-width: 850px;
+	font-family: monospace;
+	font-size: 1.1em;
+	margin-bottom: 25px;
+}
+caption {
+	background-color: #C7CB85;
+	border: 2px solid #502419;
+	border-radius: 8px;
+	padding: 6px;
+	font-weight: bold;
+}
+th, td {
+	border: 2px solid #502419;
+	padding: 8px;
+	text-align: center;
+}
+th {
+	background-color: #7EA172;
+	border-radius: 8px;
+}
+tr:nth-child(odd) td {
+	background-color: #E7A977;
+}
+tr:nth-child(even) td {
+	background-color: #EBBE9B;
+}
+</style>
+</head>
+
+<body>
+
+<h1>Exercise 8-1</h1>
+
+<table>
+	<caption>Exercise 8-1</caption>
+	<tr>
+		<th scope="col">Album</th>
+		<th scope="col">Year</th>
+	</tr>
+	<tr>
+		<td>Rubber Soul</td>
+		<td>1965</td>
+	</tr>
+	<tr>
+		<td>Revolver</td>
+		<td>1966</td>
+	</tr>
+	<tr>
+		<td>Sgt.Pepper's</td>
+		<td>1967</td>
+	</tr>
+	<tr>
+		<td>The White Album</td>
+		<td>1968</td>
+	</tr>
+	<tr>
+		<td>Abbey Road</td>
+		<td>1969</td>
+	</tr>
+</table>
+
+<h1>Exercise 8-2</h1>
+
+<table>
+	<caption>Exercise 8-2</caption>
+	<tr>
+		<th scope="col">7:00pm</th>
+		<th scope="col">7:30pm</th>
+		<th scope="col">8:00pm</th>
+	</tr>
+	<tr>
+		<td colspan="3">The Sunday Night Movie</td>
+	</tr>
+	<tr>
+		<td>Perry Mason</td>
+		<td>Candid Camera</td>
+		<td>What's My Line?</td>
+	</tr>
+	<tr>
+		<td>Bonanza</td>
+		<td colspan="2">The Wackiest Ship in the Army</td>
+	</tr>
+</table>
+
+<h1>Exercise 8-3</h1>
+
+<table>
+	<caption>Exercise 8-3</caption>
+	<tr>
+		<td>Apples</td>
+		<td rowspan="3">Oranges</td>
+		<td>Pears</td>
+	</tr>
+	<tr>
+		<td>Bananas</td>
+		<td rowspan="2">Pineapple</td>
+	</tr>
+	<tr>
+		<td>lychees</td>
+	</tr>
+</table>
+
+</body>
+</html>
