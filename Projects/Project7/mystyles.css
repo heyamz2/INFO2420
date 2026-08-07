@@ -1,0 +1,288 @@
+@charset "UTF-8";
+
+/* ============================================================
+   Extreme Honeymoons - mystyles.css
+   Color palette:
+     sand background   #EECCB0
+     light sand panel  #F8E7D6
+     deep teal text    #022726
+     teal              #057D6D
+     jade link         #006658
+     visited           #004C42
+     burnt orange      #A34400
+     hover orange      #7A3200
+     sage (left column of 2colback.jpg)  #99B19B
+   ============================================================ */
+
+
+/* ---------- Embedded font carried over from Project 3 / 4 ---------- */
+
+@font-face {
+  font-family: Darkh4;
+  src: url('fonts/Darkh4.eot');
+  src: local('Darkh4'), url('fonts/Darkh4.ttf') format('truetype');
+}
+
+
+/* ---------- Site-wide styles copied from AboutUs / Tributes ---------- */
+
+body {
+  background-color: #EECCB0;
+  color: #022726;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 100%;
+}
+
+h1 {
+  color: #057D6D;
+  font-size: 1.8em;
+  text-align: center;
+}
+
+.brand {
+  font-family: Darkh4, Arial, sans-serif;
+  font-size: 1.4em;
+  color: #A34400;
+}
+
+h2 {
+  color: #057D6D;
+  text-align: center;
+}
+
+h3 {
+  color: #006658;
+}
+
+p {
+  line-height: 1.5;
+}
+
+ul {
+  list-style-type: square;
+}
+
+hr {
+  border: 2px solid #057D6D;
+  clear: both;
+}
+
+.jumpmenu {
+  text-align: center;
+}
+
+a:link {
+  color: #006658;
+}
+
+a:visited {
+  color: #004C42;
+}
+
+a:hover {
+  color: #7A3200;
+}
+
+.floatleft {
+  float: left;
+  padding-right: 12px;
+  padding-bottom: 8px;
+}
+
+.floatright {
+  float: right;
+  padding-left: 12px;
+  padding-bottom: 8px;
+}
+
+table {
+  width: 100%;
+  border: none;
+  border-collapse: collapse;
+  clear: both;
+}
+
+caption {
+  font-size: 1.4em;
+  color: #057D6D;
+  background-color: #F8E7D6;
+  border: 2px solid #057D6D;
+  border-radius: 12px;
+  padding: 10px;
+  margin-bottom: 6px;
+}
+
+th {
+  background-color: #057D6D;
+  color: #FFFFFF;
+  text-align: center;
+  padding: 10px;
+  font-size: 1.05em;
+}
+
+td {
+  background-color: #F8E7D6;
+  border: solid 1px #057D6D;
+  color: #022726;
+  padding: 8px 10px;
+  font-size: 0.95em;
+}
+
+.dur {
+  text-align: right;
+}
+
+
+/* ============================================================
+   HOME PAGE LAYOUT
+   Fixed-width centered container, 900px total.
+   Every box below is 892px wide + 4px border on each side = 900px.
+   ============================================================ */
+
+#container {
+  width: 900px;
+  margin: 0 auto;
+}
+
+
+/* ---------- header ---------- */
+
+header {
+  width: 892px;
+  height: 190px;
+  border: 4px solid #057D6D;
+  background-color: #057D6D;
+  overflow: hidden;
+}
+
+.logolink {
+  float: left;
+  margin: 8px 0 0 45px;
+}
+
+#logo {
+  border: none;
+}
+
+#banner {
+  float: left;
+  margin: 8px 0 0 45px;
+  border: none;
+}
+
+
+/* ---------- section: 250px sage column + 642px sand column ----------
+   The 2colback.jpg background image is 900 x 150 with a 250px sage
+   left column, so the nav sits directly on top of that column.       */
+
+section {
+  width: 892px;
+  border: 4px solid #057D6D;
+  border-top: none;
+  background-image: url('images/2colback.jpg');
+  background-repeat: repeat-y;
+  overflow: hidden;
+}
+
+
+/* ---------- nav: left column, styled as buttons ---------- */
+
+nav {
+  float: left;
+  width: 250px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  text-align: center;
+}
+
+nav a:link, nav a:visited {
+  display: block;
+  width: 180px;
+  margin: 0 auto 18px auto;
+  padding: 8px 0;
+  background-color: #F8E7D6;
+  color: #022726;
+  font-size: 1.2em;
+  font-weight: bold;
+  text-decoration: none;
+  border: 3px ridge #A34400;
+  border-radius: 8px;
+}
+
+nav a:hover {
+  background-color: #A34400;
+  color: #FFFFFF;
+  border: 3px groove #F8E7D6;
+}
+
+
+/* ---------- article: right column, 626 + 8 padding x 2 = 642px ---------- */
+
+article {
+  float: left;
+  width: 626px;
+  padding: 10px 8px 25px 8px;
+  text-align: left;
+}
+
+article h2 {
+  margin-top: 28px;
+  clear: both;
+}
+
+.instructions {
+  font-style: italic;
+  text-align: center;
+}
+
+.signature {
+  font-weight: bold;
+}
+
+
+/* ---------- thumbnail image swap ---------- */
+
+#thumbs, #image {
+  text-align: center;
+}
+
+#thumbs {
+  margin-top: 10px;
+}
+
+#thumbs img {
+  border: solid 1px #057D6D;
+  margin: 2px;
+}
+
+#image {
+  margin-top: 12px;
+}
+
+#image img {
+  border: solid 2px #057D6D;
+}
+
+#bottomText {
+  text-align: center;
+}
+
+
+/* ---------- footer ---------- */
+
+footer {
+  width: 892px;
+  border: 4px solid #057D6D;
+  border-top: none;
+  background-color: #F8E7D6;
+  text-align: center;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  clear: both;
+}
+
+footer p {
+  margin: 8px 0;
+  font-size: 0.9em;
+  color: #022726;
+}

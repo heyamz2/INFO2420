@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Home: Extreme Honeymoons</title>
+<link href="mystyles.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="myscripts.js"></script>
+</head>
+
+<body onload="preloadImages()">
+
+<div id="container">
+
+<header>
+
+	<a href="Home.html" class="logolink"
+	   onmouseover="rollOver('logo', 'images/logo2.png');"
+	   onmouseout="rollOver('logo', 'images/logo.png');">
+	<img src="images/logo.png" width="150" height="175" id="logo" alt="Extreme Honeymoons logo">
+	</a>
+
+	<img src="images/banner.png" width="600" height="175" id="banner" alt="Extreme Honeymoons banner">
+
+</header>
+
+<section>
+
+	<nav>
+		<a href="Home.html">Home</a>
+		<a href="Home.html">About Us</a>
+		<a href="Home.html">Tributes</a>
+		<a href="Home.html">Survey</a>
+		<a href="Home.html">Favorites</a>
+	</nav>
+
+	<article>
+
+		<h1>Welcome to <span class="brand">Extreme</span> Honeymoons!</h1>
+
+		<p>If you are just getting hitched, we can help make your honeymoon outrageous.
+		Take a look at our Excursions and take the opportunity to complete our survey.</p>
+
+		<h2>Our Adventure Gallery</h2>
+
+		<p class="instructions">Hover over a thumbnail to see the full size photo.</p>
+
+		<div id="thumbs">
+			<img src="images/thumbnails/Image1Sm.jpg" width="150" height="100" alt="Couple hiking by a stream" onmouseover="swapImage(0);">
+			<img src="images/thumbnails/Image2Sm.jpg" width="150" height="100" alt="Snowshoeing in the backcountry" onmouseover="swapImage(1);">
+			<img src="images/thumbnails/Image3Sm.jpg" width="150" height="100" alt="Sunset over the water" onmouseover="swapImage(2);">
+			<img src="images/thumbnails/Image4Sm.jpg" width="150" height="100" alt="Mountain biking the high country" onmouseover="swapImage(3);">
+		</div>
+
+		<div id="image">
+			<img id="theImage" src="images/fullsize/Image1Lg.jpg" width="400" height="267" alt="Couple hiking by a stream">
+			<h3 id="bottomText">Couple Hiking by a Stream</h3>
+		</div>
+
+		<h2>What Our Newlyweds Are Saying</h2>
+
+		<img src="images/HeliSkiingSm.jpg" width="250" height="166" alt="Heliskiing high on the slopes of Kings Peak" class="floatright">
+
+		<p>We just wanted to thank you folks at Extreme Honeymoons for a rip-roaring time
+		during our honeymoon trip. I had always wanted to try heliskiing, and my honeymoon
+		seemed as good a time as any to go for it. Kings Peak is the tallest peak in Utah,
+		and it is amazing that we can now say we skied it.
+		<a href="Home.html">more &gt;&gt;</a></p>
+
+		<p class="signature">David and Mary Farnsworth</p>
+
+	</article>
+
+</section>
+
+<footer>
+
+	<p>This web site has been created solely for educational purposes.</p>
+	<p><a href="mailto:10957391@uvu.edu">10957391@uvu.edu</a></p>
+
+</footer>
+
+</div>
+
+</body>
+</html>
